@@ -1,13 +1,12 @@
 package com.littledyf.builder.one;
 
-import java.util.List;
 
 /**
  * @Author dengyifan
  * @create 2023/11/14 9:42
  * @description
  */
-public class ConcreteBuilderOne extends Builder{
+public class ConcreteBuilder extends Builder{
     private Product product = new Product();
 
     @Override

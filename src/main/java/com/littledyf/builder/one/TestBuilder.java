@@ -8,7 +8,7 @@ package com.littledyf.builder.one;
  */
 public class TestBuilder {
     public static void main(String[] args) {
-        Builder builder = new ConcreteBuilderOne();
+        Builder builder = new ConcreteBuilder();
         Director director = new Director(builder);
         director.construct("part1", "part2");
         builder.buildPart3("part3");
