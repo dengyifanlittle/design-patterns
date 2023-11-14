@@ -9,11 +9,14 @@ import java.util.List;
  */
 public abstract class Builder {
 
-    public abstract void buildName(String name);
+    public abstract void buildPart1(String part1);
 
-    public abstract void buildRequires(List<String> requires);
+    public abstract void buildPart2(String part2);
 
-    public abstract void buildNotRequires(List<String> notRequires);
+    public abstract void buildPart3(String part3);
+
+    public abstract void buildPart4(String part4);
+
 
     public abstract Product getProduct();
 }

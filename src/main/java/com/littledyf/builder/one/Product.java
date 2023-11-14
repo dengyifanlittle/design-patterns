@@ -1,7 +1,5 @@
 package com.littledyf.builder.one;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  * @Author dengyifan
@@ -9,30 +7,34 @@ import java.util.List;
  * @description
  */
 public class Product {
-    private String name;
+    private String part1;
+    private String part2;
+    private String part3;
+    private String part4;
 
-    private List<String> requires;
-
-    private List<String> notRequires;
-
-    public void setName(String name) {
-        this.name = name;
+    public void setPart1(String part1) {
+        this.part1 = part1;
     }
 
-    public void setRequires(List<String> requires) {
-        this.requires = requires;
+    public void setPart2(String part2) {
+        this.part2 = part2;
     }
 
-    public void setNotRequires(List<String> notRequires) {
-        this.notRequires = notRequires;
+    public void setPart3(String part3) {
+        this.part3 = part3;
+    }
+
+    public void setPart4(String part4) {
+        this.part4 = part4;
     }
 
     @Override
     public String toString() {
         return "Product{" +
-                "name='" + name + '\'' +
-                ", requires=" + requires +
-                ", notRequires=" + notRequires +
+                "part1='" + part1 + '\'' +
+                ", part2='" + part2 + '\'' +
+                ", part3='" + part3 + '\'' +
+                ", part4='" + part4 + '\'' +
                 '}';
     }
 }

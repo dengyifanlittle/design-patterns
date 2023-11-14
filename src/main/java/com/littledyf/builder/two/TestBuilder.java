@@ -8,9 +8,9 @@ package com.littledyf.builder.two;
  */
 public class TestBuilder {
     public static void main(String[] args) {
-        Product product = new Product.ConcreteBuilder("tom", "1")
-                .builderPart2("2")
-                .builderPart3("3")
+        Product product = new Product.ConcreteBuilder("part1", "part2")
+//                .builderPart3("part3")
+                .builderPart4("part4")
                 .build();
         System.out.println(product);
     }

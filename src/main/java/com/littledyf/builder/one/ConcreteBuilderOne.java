@@ -10,22 +10,25 @@ import java.util.List;
 public class ConcreteBuilderOne extends Builder{
     private Product product = new Product();
 
-
     @Override
-    public void buildName(String name) {
-        product.setName(name);
+    public void buildPart1(String part1) {
+        product.setPart1(part1);
     }
 
     @Override
-    public void buildRequires(List<String> requires) {
-        product.setRequires(requires);
+    public void buildPart2(String part2) {
+        product.setPart2(part2);
     }
 
     @Override
-    public void buildNotRequires(List<String> notRequires) {
-        product.setNotRequires(notRequires);
+    public void buildPart3(String part3) {
+        product.setPart3(part3);
     }
 
+    @Override
+    public void buildPart4(String part4) {
+        product.setPart4(part4);
+    }
 
     @Override
     public Product getProduct() {

@@ -14,9 +14,9 @@ public class Director {
         this.builder = builder;
     }
 
-    public Product construct(String name, List<String> requires) {
-        builder.buildRequires(requires);
-        builder.buildName(name);
+    public Product construct(String part1, String part2) {
+        builder.buildPart1(part1);
+        builder.buildPart2(part2);
         return builder.getProduct();
     }
 }
