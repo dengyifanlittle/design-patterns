@@ -5,6 +5,6 @@ package com.littledyf.state;
  * @create 2024/4/7 14:33
  * @description
  */
-public class State {
-
+public abstract class State {
+    public abstract void handle(Context context);
 }

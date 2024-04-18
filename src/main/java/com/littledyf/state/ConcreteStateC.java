@@ -5,10 +5,10 @@ package com.littledyf.state;
  * @create 2024/4/7 14:35
  * @description
  */
-public class ConcreteStateA extends State{
+public class ConcreteStateC extends State{
     @Override
     public void handle(Context context) {
-        System.out.println("当前状态是 开");
-        context.setState(new ConcreteStateB());
+        System.out.println("当前状态是 二档");
+        context.setState(new ConcreteStateD());
     }
 }
